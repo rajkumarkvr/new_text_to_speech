@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-To-Speech Application</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="container">
+         <div class="heading">
+            <h2>Text To Speech(Developed by Rajkumar)</h2>
+         </div>   
+         <div class="text-area">
+            <textarea  id="txt_input" class="txt-input-box" ></textarea>
+         </div>
+         <div class="btns-container">
+            <select id="lang" class="lang-opt">
+                <option value="Empty">Empty</option>
+            </select>
+            <button class="btn-listen">Listen</button>
+            <button class="btn-pause" >Pause</button>
+            <button class="btn-resume">Resume</button>
+            <button class="btn-cancel">Cancel</button>
+         </div>
+         <div class="volume-controls">
+            <p class="volume-level-info">Voice Speed (0 to 10)|<span id="current-volume-level">0</span></p>
+            <input type="range" id="volume-range-control" class="range-control" min="0" max="10">
+         </div>
+    </div>
+    <script src="speech.js" defer></script>
+</body>
+</html>
